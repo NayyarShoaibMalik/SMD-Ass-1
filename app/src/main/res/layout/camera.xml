@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".camera">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- First Part (70%) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="#B3B3B3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay_up"
+                android:layout_marginTop="20dp">
+
+                <!-- Cross Button -->
+                <ImageButton
+                    android:id="@+id/cross"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="back"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/crosss" />
+
+                <ImageButton
+                    android:id="@+id/bright"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="back"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/bright" />
+
+                <ImageButton
+                    android:id="@+id/clock"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="back"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/clock" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Second Part (30%) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay_up1"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp">
+
+                <!-- Cross Button -->
+                <ImageButton
+                    android:id="@+id/gall"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="16dp"
+                    android:onClick="back"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/gallery" />
+
+
+                    <ImageButton
+                        android:id="@+id/cam"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="50dp"
+                        android:clickable="true"
+                        android:scaleType="fitCenter"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/camera" />
+
+
+                <!-- Shift Button -->
+                <ImageButton
+                    android:id="@+id/shift"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="back"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/shift" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_below="@+id/forgot_password_link"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="110dp"
+                    android:text="photo"
+                    android:clickable="true"
+                    android:textSize="12sp"
+                    android:background="@drawable/circle2"
+                    />
+
+                <TextView
+                    android:id="@+id/verification_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="17dp"
+                    android:text="video"
+                    android:onClick="video"
+                    android:clickable="true"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

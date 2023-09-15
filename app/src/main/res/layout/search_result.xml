@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".search_result">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lay_up"
+        android:layout_marginTop="20dp">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:onClick="search_back"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow" />
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp"
+            android:textSize="24sp"
+            android:layout_marginLeft="17dp"
+            android:text="Search Result"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/lay_up"
+        android:background="#33000000" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:id="@id/dplayout"
+        android:layout_below="@id/line"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Text "Some Items" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Some Items"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="15dp"
+            android:background="#80B3B3B3"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopEnd="4dp"
+            android:id="@+id/em"
+            android:hint="Best Match"
+            app:boxCornerRadiusTopStart="4dp">
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/dplayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layup2"
+                android:orientation="horizontal">
+                <!-- Cart -->
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="200dp"
+                    android:layout_height="220dp"
+                    android:id="@+id/cart1"
+                    android:layout_below="@+id/name1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Item Image -->
+                        <ImageView
+                            android:id="@+id/cart_item_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:background="#B3B3B3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!-- Item Name -->
+                            <TextView
+                                android:id="@+id/item_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="item Name"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+
+
+                            <!-- Item rate -->
+                            <TextView
+                                android:id="@+id/item_rate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="21dp"
+                                android:textColor="#FF2222"
+                                android:text="$10/hr"
+                                android:textSize="16sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- Location Button -->
+                            <ImageButton
+                                android:id="@+id/location1"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="3dp"
+                                android:scaleType="fitCenter"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/loc1" />
+
+                            <!-- Location Text -->
+                            <TextView
+                                android:id="@+id/location_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:text="Islamabad" />
+
+                            <!-- Date Text -->
+                            <TextView
+                                android:id="@+id/date_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="21dp"
+                                android:text="7th Mar" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Cart -->
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_below="@+id/cart1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Item Image -->
+                        <ImageView
+                            android:id="@+id/cart_item_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:background="#B3B3B3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!-- Item Name -->
+                            <TextView
+                                android:id="@+id/item_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="item Name"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+
+
+                            <!-- Item rate -->
+                            <TextView
+                                android:id="@+id/item_rate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#FF2222"
+                                android:text="$10/hr"
+                                android:textSize="16sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- Location Button -->
+                            <ImageButton
+                                android:id="@+id/location2"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="3dp"
+                                android:scaleType="fitCenter"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/loc1" />
+
+                            <!-- Location Text -->
+                            <TextView
+                                android:id="@+id/location_text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="10sp"
+                                android:text="Islamabad" />
+
+                            <!-- Date Text -->
+                            <TextView
+                                android:id="@+id/date_text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="10dp"
+                                android:text="7th Mar" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layup"
+                android:orientation="horizontal">
+                <!-- Cart -->
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="200dp"
+                    android:layout_height="220dp"
+                    android:id="@+id/cart"
+                    android:layout_below="@+id/name1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Item Image -->
+                        <ImageView
+                            android:id="@+id/cart_item_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:background="#B3B3B3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!-- Item Name -->
+                            <TextView
+                                android:id="@+id/item_nam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="item Name"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+
+
+                            <!-- Item rate -->
+                            <TextView
+                                android:id="@+id/item_rt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="21dp"
+                                android:textColor="#FF2222"
+                                android:text="$10/hr"
+                                android:textSize="16sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- Location Button -->
+                            <ImageButton
+                                android:id="@+id/locat1"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="3dp"
+                                android:scaleType="fitCenter"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/loc1" />
+
+                            <!-- Location Text -->
+                            <TextView
+                                android:id="@+id/location_txt1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:text="Islamabad" />
+
+                            <!-- Date Text -->
+                            <TextView
+                                android:id="@+id/date_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="21dp"
+                                android:text="7th Mar" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Cart -->
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:layout_margin="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <!-- Item Image -->
+                        <ImageView
+                            android:id="@+id/cart_itm_img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:background="#B3B3B3"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!-- Item Name -->
+                            <TextView
+                                android:id="@+id/itm_name1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="item Name"
+                                android:textSize="18sp"
+                                android:layout_marginTop="8dp" />
+
+
+                            <!-- Item rate -->
+                            <TextView
+                                android:id="@+id/itm_rate1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="#FF2222"
+                                android:text="$10/hr"
+                                android:textSize="16sp"
+                                android:layout_marginTop="8dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <!-- Location Button -->
+                            <ImageButton
+                                android:id="@+id/loc"
+                                android:layout_width="30dp"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="3dp"
+                                android:scaleType="fitCenter"
+                                android:background="@android:color/transparent"
+                                android:src="@drawable/loc1" />
+
+                            <!-- Location Text -->
+                            <TextView
+                                android:id="@+id/locat_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="10sp"
+                                android:text="Islamabad" />
+
+                            <!-- Date Text -->
+                            <TextView
+                                android:id="@+id/dte_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="15dp"
+                                android:textSize="14sp"
+                                android:layout_marginLeft="10dp"
+                                android:text="7th Mar" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

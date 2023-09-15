@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".search">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:text="Find Exactly what you need!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/searchTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/text"
+        android:layout_height="wrap_content"
+        android:hint=""
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:drawablePadding="8dp"
+            android:background="#80B3B3B3"
+            android:hint="Search"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="4dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/searchTextInputLayout"
+        android:layout_marginLeft="25dp"
+        android:text="Recent searches"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup1"
+        android:layout_below="@+id/text1"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 1"
+            android:textStyle="bold" />
+
+
+        <!--  Button -->
+        <ImageButton
+            android:id="@+id/sc"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup"
+        android:layout_below="@+id/layup1"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 2"
+            android:textStyle="bold" />
+
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup2"
+        android:layout_below="@+id/layup"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 3"
+            android:textStyle="bold" />
+
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/edit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/layup2"
+        android:layout_marginLeft="25dp"
+        android:text="Popular searches"
+        android:textSize="20sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup_1"
+        android:layout_below="@+id/text_1"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 1"
+            android:textStyle="bold" />
+
+
+        <!--  Button -->
+        <ImageButton
+            android:id="@+id/sc1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup_2"
+        android:layout_below="@+id/layup_1"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verificat_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 2"
+            android:textStyle="bold" />
+
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/edit_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layup_3"
+        android:layout_below="@+id/layup_2"
+        android:layout_marginLeft="10dp">
+
+
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/verification_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:text="item number 3"
+            android:textStyle="bold" />
+
+
+        <!-- Edit Button -->
+        <ImageButton
+            android:id="@+id/edt1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/seracharrow" />
+    </LinearLayout>
+
+
+    <!-- navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <!-- Home Button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hm"
+                android:contentDescription="Home"
+                android:onClick="home"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_button"
+                android:layout_centerHorizontal="true"
+                android:text="Home"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <!-- Search Button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sr"
+                android:contentDescription="Search"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_button"
+                android:layout_centerHorizontal="true"
+                android:text="Search"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+
+        <!-- Add button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/add1"
+                android:onClick="add"
+                android:clickable="true"
+                android:contentDescription="Add"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <!-- Chat Button -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/chat_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/chat1"
+                android:contentDescription="Chat"
+                android:onClick="chat"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_button"
+                android:layout_centerHorizontal="true"
+                android:text="Chat"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <!-- profile -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pf"
+                android:onClick="profile"
+                android:clickable="true"
+                android:contentDescription="profile"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_button"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

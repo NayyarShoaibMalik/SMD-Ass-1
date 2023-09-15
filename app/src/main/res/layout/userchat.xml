@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".userchat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:onClick="back"
+            android:clickable="true"
+            android:src="@drawable/arrow"
+            android:id="@+id/backMessageScreen"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="User"
+            android:textColor="#3f4144"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/adcall"
+            android:onClick="audio"
+            android:clickable="true"
+            android:id="@+id/audioIcon"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:onClick="video"
+            android:id="@+id/videoIcon"
+            android:src="@drawable/vdcall"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9fa8b8"
+        android:layout_marginBottom="150dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/circleg"
+            android:text="This is a sample message"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="#FF5722"
+            android:text="This is a sample message"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use1"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/circleg"
+            android:text="This is a sample message"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use3"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/circleg"
+            android:text="This is a sample message"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use4"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/circleg"
+            android:text="This is a sample message"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="#FF5722"
+            android:text="This is a sample message"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:background="#FF5722"
+            android:text="This is a sample message"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use5"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/circleg"
+            android:text="This is a sample message"
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="8:56"
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            android:id="@+id/use6"
+            android:src="@drawable/pf"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/circleg"
+            android:text="..."
+            android:textSize="18dp"
+            android:padding="7dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text=""
+            android:textColor="#98a2b3"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9fa8b8"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a reply..."
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/camera"
+            android:id="@+id/cameraIcon"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/gallery"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/doc"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:text="Send"
+            android:gravity="end"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#f08405"/>
+    </LinearLayout>
+
+</LinearLayout>
+

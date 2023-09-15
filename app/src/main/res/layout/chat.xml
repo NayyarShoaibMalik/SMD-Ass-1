@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".chat">
+
+
+    <TextView
+        android:id="@+id/chat_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:text="Chat"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/chat_text"
+        android:background="#33000000" />
+
+
+    <!-- User 1 Chat -->
+    <RelativeLayout
+        android:id="@+id/user1_chat"
+        android:layout_below="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/user1_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pf"
+            android:layout_alignParentStart="true"
+            android:contentDescription="User 1" />
+        <TextView
+            android:id="@+id/user1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user1_image"
+            android:layout_marginStart="16dp"
+            android:text="User 1"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user1_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user1_name"
+            android:layout_toEndOf="@id/user1_image"
+            android:layout_marginStart="16dp"
+            android:text="1 new message"
+            android:textColor="#FF2222"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/rightarr"
+            android:onClick="userchat"
+            android:clickable="true"
+            android:layout_toEndOf="@id/user1_message"
+            android:contentDescription="User 1" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line1"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/user1_chat"
+        android:background="#33000000" />
+
+
+    <!-- User 2 Chat -->
+    <RelativeLayout
+        android:id="@+id/user2_chat"
+        android:layout_below="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/user2_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pf"
+            android:layout_alignParentStart="true"
+            android:contentDescription="User 1" />
+
+        <TextView
+            android:id="@+id/user2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user2_image"
+            android:layout_marginStart="16dp"
+            android:text="User 2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user2_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user2_name"
+            android:layout_toEndOf="@id/user2_image"
+            android:layout_marginStart="16dp"
+            android:text="No new message"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/rightarr"
+            android:onClick="userchat"
+            android:clickable="true"
+            android:layout_toEndOf="@id/user2_message"
+            android:contentDescription="User 1" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line2"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/user2_chat"
+        android:background="#33000000" />
+
+
+
+    <!-- User 3 Chat -->
+    <RelativeLayout
+        android:id="@+id/user3_chat"
+        android:layout_below="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/user3_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/pf"
+            android:layout_alignParentStart="true"
+            android:contentDescription="User 3" />
+
+        <TextView
+            android:id="@+id/user3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/user3_image"
+            android:layout_marginStart="16dp"
+            android:text="User 3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user3_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user3_name"
+            android:layout_toEndOf="@id/user3_image"
+            android:layout_marginStart="16dp"
+            android:text="No new message"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/rightarr"
+            android:onClick="userchat"
+            android:clickable="true"
+            android:layout_toEndOf="@id/user3_message"
+            android:contentDescription="User 1" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:id="@+id/line3"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/user3_chat"
+        android:background="#33000000" />
+
+
+    <!-- navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <!-- Home Button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/home_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hm"
+                android:contentDescription="Home"
+                android:onClick="home"
+                android:clickable="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_button"
+                android:layout_centerHorizontal="true"
+                android:text="Home"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <!-- Search Button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sr"
+                android:contentDescription="Search"
+                android:onClick="search"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_button"
+                android:layout_centerHorizontal="true"
+                android:text="Search"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+
+        <!-- Add button -->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/add_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/add1"
+                android:onClick="add"
+                android:clickable="true"
+                android:contentDescription="Add"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <!-- Chat Button -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/chat_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/chat1"
+                android:contentDescription="Chat"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chat_button"
+                android:layout_centerHorizontal="true"
+                android:text="Chat"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <!-- profile -->
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/profile_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pf"
+                android:onClick="profile"
+                android:clickable="true"
+                android:contentDescription="profile"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_button"
+                android:layout_centerHorizontal="true"
+                android:text="Profile"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
